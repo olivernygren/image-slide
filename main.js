@@ -7,11 +7,13 @@ function main() {
     startSlideshowAnimation()
 }
 
+/** Starts the animation with a set interval */
 function startSlideshowAnimation() {
     setInterval(changeActiveImage, 2000);
     // changeActiveImage();
 }
 
+/** Presents the next image by checking which image is currently presented */
 function changeActiveImage() {
     const images = document.querySelectorAll('.slideshow-container > img');
     
